@@ -1,5 +1,11 @@
 function removeStringValuesLongerThan(num, obj) {
   // your code here
+  for (var key in obj){
+    if (obj[key].length > num ){
+        delete obj[key];
+        }
+  }
+  return obj;
 }
 
 let obj = {
@@ -8,3 +14,4 @@ let obj = {
   location: 'Texas',
 };
 removeStringValuesLongerThan(6, obj);
+console.log(obj);

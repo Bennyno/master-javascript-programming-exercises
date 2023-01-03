@@ -1,6 +1,11 @@
 function addToBackOfNew(arr, element) {
     // Write your function here
-    
+    let new_arr = [] 
+    arr.forEach(e=>{
+        new_arr.push(e);
+    })
+    new_arr.push(element)
+    return new_arr;
 }
 
 let input = [1, 2];

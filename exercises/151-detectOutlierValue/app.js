@@ -1,5 +1,8 @@
 function detectOutlierValue(string) {
     // your code here
+    for(n of string){
+        i
+    }
 }
 
 // Third number is odd, while the rest of the numbers are even

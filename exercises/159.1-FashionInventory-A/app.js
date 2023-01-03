@@ -21,6 +21,12 @@ function renderInventory(inventory) {
     // your code here
     // hint: before you just dive into coding...
     // it's a good idea to sketch out a skeleton like you've been seeing earlier in this module...
-    
+    let new_arr = []
+    inventory.map(e=>{
+        e.shoes.map(i=>{
+            new_arr.push([e.name, i.name, i.price])
+        })
+    })
+    return new_arr
 }
 console.log(renderInventory(currentInventory))

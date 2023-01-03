@@ -19,4 +19,19 @@ let inventory = [
 
 function getLaceNameDataForShoes(inventory) {
     // your code here
+    let new_arr = []
+    inventory.map(e => {
+      e.shoes.map(i => {
+        let splits = i.name.split(' ')
+        let count = 0
+        splits.map(s => {
+          if(s.startsWith('lace'))
+            new_arr.push({nameWords: splits, targetWordIndex: count});
+            else count ++
+      })
+    })
+  })
+  return new_arr 
 }
+
+console.log(getLaceNameDataForShoes(inventory))

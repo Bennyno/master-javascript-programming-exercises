@@ -1,6 +1,9 @@
 function multiplyBetween(num1, num2) {
     // Your code here
-
+    if(num1 > num2) return 0;
+    let val = 1
+    for(i = num1; i < num2; i++) val *= i
+    return val
 }
 
 let output = multiplyBetween(2, 5);

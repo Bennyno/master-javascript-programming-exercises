@@ -18,5 +18,16 @@ let inventory = [
   ];
 
 function renderInventory(shoeList) {
-  
+  new_arr = []
+  shoeList.map(e => {
+    e.shoes.map(i => {
+      if(i.name.includes('black')){
+        new_arr.push([e.name, i.name, i.price])
+      }
+    })
+  })
+  return new_arr
 }
+
+console.log(renderInventory(inventory))
+
